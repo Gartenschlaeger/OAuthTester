@@ -3,5 +3,14 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 4,
     "prettier.tabWidth": 4,
-    "prettier.printWidth": 120
+    "prettier.printWidth": 120,
+    "liveServer.settings.port": 5501,
+    "liveServer.settings.root": "/",
+    "liveServer.settings.CustomBrowser": "chrome:PrivateMode",
+    "liveServer.settings.https": {
+        "enable": true,
+        "cert": "/home/kai/source/oauth_tester/certs/server.crt",
+        "key": "/home/kai/source/oauth_tester/certs/server.key",
+        "passphrase": "1234"
+    }
 }
