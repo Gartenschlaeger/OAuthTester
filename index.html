@@ -14,7 +14,11 @@
     </head>
     <body class="pt-5">
         <div class="container">
-            <form action="http://localhost:8080/auth/realms/master/protocol/openid-connect/auth" method="post">
+            <form method="post">
+                <div class="mb-2">
+                    <label for="auth_url">auth_url</label>
+                    <input class="form-control" type="text" id="auth_url" name="auth_url" autocomplete="off" value="" />
+                </div>
                 <div class="mb-2">
                     <label for="client_id">client_id</label>
                     <input
@@ -23,7 +27,7 @@
                         id="client_id"
                         name="client_id"
                         autocomplete="off"
-                        value="test1"
+                        value=""
                     />
                 </div>
                 <div class="mb-2">
@@ -64,5 +68,18 @@
                 </div>
             </form>
         </div>
+
+        <script>
+            document.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                const form = document.querySelector('form');
+                const url = document.querySelector('#auth_url').value;
+                if (url) {
+                    form.setAttribute('action', url);
+                    form.submit();
+                }
+            });
+        </script>
     </body>
 </html>
