@@ -9,8 +9,8 @@
     "liveServer.settings.CustomBrowser": "chrome:PrivateMode",
     "liveServer.settings.https": {
         "enable": true,
-        "cert": "/home/kai/source/oauth_tester/certs/server.crt",
-        "key": "/home/kai/source/oauth_tester/certs/server.key",
+        "cert": "/home/kai/certs/server.crt",
+        "key": "/home/kai/certs/server.key",
         "passphrase": "1234"
     }
 }
